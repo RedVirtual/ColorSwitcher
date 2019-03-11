@@ -6,9 +6,44 @@
 
     <StackLayout>
         <!-- Place new controls here -->
+        <!--
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+        -->
+
+        <BoxView x:Name="boxColor"
+                 BackgroundColor="Black"
+                 HeightRequest="300">            
+        </BoxView>
+        <Label Margin="30,25,0,0"
+               Text="Red">            
+        </Label>
+        <Slider x:Name="redSlider"
+                Margin="15,0,0,0"              
+                ValueChanged="Slider_ValueChanged">            
+        </Slider>
+        <Label Margin="30,25,0,0"
+               Text="Green">
+        </Label>
+        <Slider x:Name="greenSlider"
+                Margin="15,0,0,0"               
+                ValueChanged="Slider_ValueChanged">
+        </Slider>
+        <Label Margin="30,25,0,0"
+               Text="Blue">
+        </Label>
+        <Slider x:Name="blueSlider"
+                Margin="15,0,0,0"              
+                ValueChanged="Slider_ValueChanged">
+        </Slider>
+        <Label x:Name="lblDisplay"
+               Text="Valor Hexadecimal: ">            
+        </Label>
+        
+        
+        
+
     </StackLayout>
 
 </ContentPage>
